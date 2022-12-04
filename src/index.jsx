@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::selection {
-    background-color: #dcdcdc;
+    background-color: #b1afc8aa;
   }
 
   ol, ul {
@@ -28,7 +28,6 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-image: ${colors.bg};
-    overflow: hidden;
     font-family: 'Shippori Mincho', serif;
   }
 `

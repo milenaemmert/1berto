@@ -1,1 +1,1 @@
-// export { NameComponent } from './name/name.component'
+export { Header } from './Header/Header'

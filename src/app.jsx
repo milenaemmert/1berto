@@ -1,7 +1,11 @@
+import { Header } from './components'
+import { Banner } from './components/Banner/Banner'
+
 const App = () => {
   return (
     <div className='App'>
-      <h1>Tome, cavalo 🐎</h1>
+      <Header />
+      <Banner />
     </div>
   )
 }
