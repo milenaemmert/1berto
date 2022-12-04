@@ -7,7 +7,16 @@ export const colors = {
 export const paddings = {
   large: '2em',
   medium: '1.5em',
-  mobile: '1em'
+  low: '1em'
 }
 
+export const gaps = {
+  large: '2em',
+  medium: '1em',
+  low: '.5em'
+}
+
+export const global = {
+  container: '1248px'
+}
 
