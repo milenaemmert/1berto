@@ -17,6 +17,8 @@ export const gaps = {
 }
 
 export const global = {
-  container: '1248px'
+  container: '1248px',
+  borderRadius: '8px',
+  opacity: '.8'
 }
 
