@@ -1,5 +1,6 @@
 import { LandingPage } from './screens'
 
+
 const App = () => {
   return (
     <LandingPage />

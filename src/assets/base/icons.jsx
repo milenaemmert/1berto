@@ -10,6 +10,20 @@ export const deezer = (
   </svg>
 )
 
+export const exit = (
+  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1_107)">
+      <path d="M24 8L8 24" stroke="white" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M8 8L24 24" stroke="white" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <defs>
+      <clipPath id="clip0_1_107">
+        <rect width="32" height="32" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+)
+
 export const facebook = (
   <svg viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path

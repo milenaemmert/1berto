@@ -3,7 +3,8 @@ import { colors, paddings } from '../../assets/base/variables'
 import logo from '../../assets/images/humberto-logo-white.png'
 import { Menu } from './Menu.component'
 import { Midia } from '../Midia/Midia.component'
-import { menu } from '../../assets/base/icons'
+import { MenuMobile } from './MenuMobile.component'
+
 
 const HeaderContainer = styled.header`
   background-color: ${colors.cinder};
@@ -22,19 +23,7 @@ const LogoHG = styled.img`
   width: 164px;
 `
 
-const MenuIcon = styled.button`
-  display: none;
-  background-color: transparent;
-  cursor: pointer;
 
-  svg {
-    width: 32px;
-  }
-
-  @media(max-width: 940px) {
-    display: flex;
-  }
-`
 
 export const Header = () => {
   return (
@@ -42,7 +31,7 @@ export const Header = () => {
       <LogoHG src={logo} alt='Logo HG' />
       <Menu />
       <Midia />
-      <MenuIcon>{menu}</MenuIcon>
+      <MenuMobile />
     </HeaderContainer>
   )
 }
