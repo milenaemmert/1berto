@@ -1,4 +1,4 @@
-import { Header, Banner, ShopNow, Footer } from './components'
+import { Header, Banner, ShopNow, Shows, Footer } from './components'
 
 const App = () => {
   return (
@@ -6,6 +6,7 @@ const App = () => {
       <Header />
       <Banner />
       <ShopNow />
+      <Shows />
       <Footer />
     </div>
   )
