@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Streaming } from '../Streaming/Streaming'
+import { Streaming } from '../Streaming/Streaming.component'
 import { colors, paddings, global } from '../../assets/base/variables'
 
 const ShopContainer = styled.div`

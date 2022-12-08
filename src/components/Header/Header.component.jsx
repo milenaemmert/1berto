@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import { colors, paddings } from '../../assets/base/variables'
 import logo from '../../assets/images/humberto-logo-white.png'
-import { Menu } from './Menu'
-import { Midia } from '../Midia/Midia'
+import { Menu } from './Menu.component'
+import { Midia } from '../Midia/Midia.component'
 import { menu } from '../../assets/base/icons'
 
 const HeaderContainer = styled.header`

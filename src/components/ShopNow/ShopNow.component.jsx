@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import bg from '../../assets/images/gradient-bg.png'
 import NVH from '../../assets/images/naovejoahora-album.png'
-import { Shop } from './Shop'
+import { Shop } from './Shop.component'
 import { global, paddings } from '../../assets/base/variables'
 
 
