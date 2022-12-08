@@ -1,1 +1,2 @@
-// export { NameScreen } from './name/name.screen'
+export { LandingPage } from './LandingPage.screen'
+

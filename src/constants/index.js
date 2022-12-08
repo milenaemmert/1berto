@@ -1,1 +1,2 @@
-// export { NAME } from '.name'
+export { shows } from './shows'
+

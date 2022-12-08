@@ -1,18 +1,56 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-import { shows } from '../../constants/shows'
+import { shows } from '../../constants'
+import { colors, paddings } from '../../assets/base/variables'
 
+const SectionShows = styled.section`
+  h2 {
+    font-size: 4em;
+    font-weight: bold;
+    color: ${colors.cinder};
+  }
+  h3 {
+    font-weight: bold;
+    color: ${colors.cinder};
+  }
+  a {
+    color: ${colors.cinder};
+    font-size: .8em;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  
+`
 
 const Table = styled.table`
-  border: 1px solid black;
+  
+`
 
-  tfoot td {
-    background-color: red;
-    width: 100%;
+const TdBig = styled.td`
+  font-size: 2em;
+  font-weight: bold;
+  color: ${colors.white};
+  padding: 0 ${paddings.large} 0 0;
+`
+
+const TdSmall = styled.td`
+  color: ${colors.cinder};
+  padding: 0 0 0 0;
+  
+  a {
+    color: ${colors.cinder};
+    font-size: .8em;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 `
 
-
+const TRow = styled.tr`
+  padding-bottom: ${paddings.large};
+`
 
 export const TableShows = () => {
   const [showsState, setShowsState] = useState(shows)
@@ -25,35 +63,35 @@ export const TableShows = () => {
       return (
         <Table>
           <tbody>
-            <tr>
-              <td>{show.date}</td>
-              <td>{show.city}</td>
+            <TRow>
+              <TdBig>{show.date}</TdBig>
+              <TdBig>{show.city}</TdBig>
               {show.link ? 
-                <td><a href={show.link} target='_blank'>Compre aqui</a></td>
+                <TdSmall><a href={show.link} target='_blank'>Compre aqui</a></TdSmall>
                 :
                 null
               }
-            </tr>
+            </TRow>
 
           </tbody>
-          <tfoot>
-            <tr>
+          <TRow>
+            <TdSmall>
               {show.place}
-            </tr>
-          </tfoot>
+            </TdSmall>
+          </TRow>
         </Table>
       )
     })
   }
 
   return (
-    <section>
+    <SectionShows>
       <h2>AGENDA</h2>
       <h3>Não vejo a hora</h3>
 
 
       {handleShows()}
 
-    </section>
+    </SectionShows>
   )
 }

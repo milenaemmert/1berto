@@ -1,14 +1,8 @@
-import { Header, Banner, ShopNow, Shows, Footer } from './components'
+import { LandingPage } from './screens'
 
 const App = () => {
   return (
-    <div className='App'>
-      <Header />
-      <Banner />
-      <ShopNow />
-      <Shows />
-      <Footer />
-    </div>
+    <LandingPage />
   )
 }
 

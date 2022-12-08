@@ -21,6 +21,6 @@ export const shows = [
     date: '17/12',
     city: 'Santa Rosa, RS',
     link: '',
-    place: 'Pavilhão da Oktoberfest'
+    place: 'Oktoberfest'
   }
 ]
