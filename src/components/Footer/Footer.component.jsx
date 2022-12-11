@@ -5,7 +5,6 @@ import stereophonica from '../../assets/images/stereophonica-logo.png'
 import webdev from '../../assets/images/webdev-logo.png'
 
 const FooterContainer = styled.footer`
-
   background-color: ${colors.cinder};
   padding: ${paddings.large} 0;
   color : ${colors.white};
@@ -30,7 +29,7 @@ const Contato = styled.div`
 const FooterLogos = styled.div`
   display: flex;
   justify-content: center;
-  gap: ${gaps.medium};
+  gap: ${gaps.large};
   text-align: center;
 
   div {
