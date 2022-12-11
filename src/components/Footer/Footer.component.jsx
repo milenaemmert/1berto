@@ -1,13 +1,13 @@
 import styled from 'styled-components'
-import { colors, paddings } from '../../assets/base/variables'
+import { colors, paddings, gaps } from '../../assets/base/variables'
 import estreia from '../../assets/images/estreia-logo.png'
 import stereophonica from '../../assets/images/stereophonica-logo.png'
 import webdev from '../../assets/images/webdev-logo.png'
 
 const FooterContainer = styled.footer`
-  background-color: ${colors.cinder};
-  padding: ${paddings.large};
 
+  background-color: ${colors.cinder};
+  padding: ${paddings.large} 0;
   color : ${colors.white};
 
   a {
@@ -19,17 +19,19 @@ const Contato = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 24px;
+  gap: ${gaps.low};
+  margin-bottom: 40px;
 
   img {
-    width: 224px;
+    width: 180px;
   }
 `
 
 const FooterLogos = styled.div`
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: ${gaps.medium};
+  text-align: center;
 
   div {
     display: flex;
@@ -39,6 +41,11 @@ const FooterLogos = styled.div`
 
   img {
     width: 120px;
+  }
+
+  @media screen and (max-width: 564px) {
+    flex-direction: column;
+    align-items: center;
   }
 `
 
