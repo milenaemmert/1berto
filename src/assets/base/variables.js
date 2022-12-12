@@ -1,6 +1,7 @@
 export const colors = {
   white: '#ffffff',
   cinder: '#151422',
+  cinderOpacity: '#15142238',
   bg: 'linear-gradient(45deg, #b1afc8, #dcdcdc)'
 }
 

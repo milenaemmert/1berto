@@ -4,21 +4,31 @@ import { TableShows } from './TableShows.component'
 import { global, paddings } from '../../assets/base/variables'
 
 const ContainerShows = styled.section`
-  padding: ${paddings.large} 0;
   width: ${global.container};
-  margin: 0 auto;
-  background: url(${HG});
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: contain;
+  padding: 0 ${paddings.large};
+  background: no-repeat url(${HG});
+  background-position: left top;
+  background-size: 32%;
   display: flex;
   justify-content: flex-end;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1280px) {
+    max-width: 100vw;
+    background-size: contain;
+  }
+
+  @media screen and (max-width: 566px) {
+    padding: 0 ${paddings.low};
+    background-position: center;
+    justify-content: center;
+  }
 `
+
 
 export const Shows = () => {
   return (
     <ContainerShows>
-
       <TableShows />
     </ContainerShows>
   )

@@ -1,43 +1,53 @@
 import { useState } from 'react'
 import styled from 'styled-components'
 import { shows } from '../../constants'
-import { colors, paddings } from '../../assets/base/variables'
+import { colors, paddings, global } from '../../assets/base/variables'
 
 const SectionShows = styled.section`
+  background-color: ${colors.cinderOpacity};
+  border-radius: ${global.borderRadius};
+  padding: ${paddings.large};
+
   h2 {
     font-size: 4em;
+  }
+
+  h2, h3 {
     font-weight: bold;
     color: ${colors.cinder};
   }
-  h3 {
-    font-weight: bold;
-    color: ${colors.cinder};
-  }
+
   a {
     color: ${colors.cinder};
     font-size: .8em;
   }
+
   a:hover {
     text-decoration: underline;
   }
 
-  
-`
-
-const Table = styled.table`
-  
+  @media screen and (max-width: 566px) {
+    max-width: 320px;
+    h2 {
+      font-size: 3em;
+    }
+  }
 `
 
 const TdBig = styled.td`
   font-size: 2em;
   font-weight: bold;
   color: ${colors.white};
-  padding: 0 ${paddings.large} 0 0;
+
+
+  @media screen and (max-width: 566px) {
+    font-size: 1em;
+  }
 `
 
 const TdSmall = styled.td`
   color: ${colors.cinder};
-  padding: 0 0 0 0;
+  padding: ${paddings.low};
   
   a {
     color: ${colors.cinder};
@@ -45,6 +55,10 @@ const TdSmall = styled.td`
   }
   a:hover {
     text-decoration: underline;
+  }
+
+  @media screen and (max-width: 566px) {
+    font-size: 0.8em;
   }
 `
 
@@ -61,7 +75,7 @@ export const TableShows = () => {
 
     return showsState.map(show => {
       return (
-        <Table>
+        <table>
           <tbody>
             <TRow>
               <TdBig>{show.date}</TdBig>
@@ -79,7 +93,7 @@ export const TableShows = () => {
               {show.place}
             </TdSmall>
           </TRow>
-        </Table>
+        </table>
       )
     })
   }

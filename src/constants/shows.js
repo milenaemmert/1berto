@@ -3,13 +3,13 @@ export const shows = [
     date: '03/09',
     city: 'Noia City, RS',
     link: 'https://www.teatrofeevale.com.br/',
-    place: 'Teatro Feevale'
+    place: 'T. Feevale'
   },
   {
     date: '26/11',
     city: 'Curitiba, PR',
     link: 'https://site.blueticket.com.br/evento/30682/prime-rock-brasil-curitiba',
-    place: 'Prime Rock 2022'
+    place: 'Prime Rock'
   },
   {
     date: '16/12',
