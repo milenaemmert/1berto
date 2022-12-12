@@ -14,6 +14,13 @@ const StreamingContainer = styled.div`
   svg {
     width: 64px;
   }
+
+  @media screen and (max-width: 1248px) {
+    width: 100%;
+    svg { 
+      width: 32px;
+    }
+  }
 `
 
 export const Streaming = () => {

@@ -13,6 +13,11 @@ const ShopContainer = styled.div`
   span {
     font-weight: bold;
   }
+
+  @media screen and (max-width: 640px) {
+    padding: 32px;
+    width: 100%;
+  }
 `
 
 const ShopLink = styled.a`
@@ -24,6 +29,10 @@ const ShopLink = styled.a`
   color: ${colors.white};
   font-size: 2em;
   margin-bottom: 16px;
+
+  @media screen and (max-width: 1248px) {
+    font-size: 1em;
+  }
 `
 
 export const Shop = () => {
