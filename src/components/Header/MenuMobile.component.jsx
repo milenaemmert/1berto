@@ -7,16 +7,20 @@ import { useState } from 'react'
 const MenuMobileContainer = styled.ul`
   background-color: ${colors.cinder};
   color: currentColor;
-
+  display: none;
   
 
   a {
     color: ${colors.white}
   }
+
+  @media(max-width: 940px) {
+    display: flex;
+  }
 `
 
 const MenuIcon = styled.button`
-  display: none;
+  
   background-color: transparent;
   cursor: pointer;
 
@@ -24,9 +28,7 @@ const MenuIcon = styled.button`
     width: 32px;
   }
 
-  @media(max-width: 940px) {
-    display: flex;
-  }
+  
 `
 
 export const MenuMobile = () => {
