@@ -8,14 +8,13 @@ const ContainerShows = styled.section`
   padding: 0 ${paddings.large};
   background: no-repeat url(${HG});
   background-position: left top;
-  background-size: 32%;
+  background-size: contain;
   display: flex;
   justify-content: flex-end;
   margin: 0 auto;
 
   @media screen and (max-width: 1280px) {
     max-width: 100vw;
-    background-size: contain;
   }
 
   @media screen and (max-width: 566px) {
